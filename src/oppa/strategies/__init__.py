@@ -1,0 +1,1 @@
+from .parallel_strategy import ParallelisationStrategy, STRATEGY_EMBEDDING_DIM, STRATEGY_PARALLELISM_DIM_SIZE_INDEXS

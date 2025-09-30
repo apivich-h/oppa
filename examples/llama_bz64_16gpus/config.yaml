@@ -1,0 +1,13 @@
+model: 'hf_gen'
+model_name: 'llama3-1b'
+dataset_name: 'wikitext,wikitext-2-v1'
+use_flash_attn: false
+seq_max_length: 1024
+lr: 0.0001
+booster_args:
+  hysteresis: 0
+  initial_scale: 1.
+  min_scale: 0.5
+special_tokens:
+  pad_token: '[PAD]'
+  

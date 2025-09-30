@@ -1,0 +1,13 @@
+model: 'hf_gen'
+model_name: 'Qwen/Qwen2-1.5B'
+dataset_name: 'wikitext,wikitext-2-v1'
+use_flash_attn: true
+seq_max_length: 1024
+booster_args:
+  initial_scale: 0.125
+  min_scale: 0.000001
+  growth_factor: 2.
+  backoff_factor: 0.5
+  hysteresis: 2
+special_tokens:
+  pad_token: '<|endoftext|>'

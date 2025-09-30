@@ -1,0 +1,10 @@
+model: 'hf_class'
+model_name: 'bert-base-uncased'
+dataset_name: 'imdb'
+use_flash_attn: false
+seq_max_length: 256
+booster_args:
+  hysteresis: 1
+  initial_scale: 1.
+special_tokens:
+  pad_token: '[PAD]'

@@ -1,0 +1,22 @@
+range="6 7 8"
+
+for seed in ${range}; do
+
+    for method in pm_et-m52_ucb bo-m52_ucb cost xgb random; do
+        nohup python run.py $method $seed
+    done
+
+done
+
+
+# for seed in ${range}; do
+
+#     for bovar in pm_et pm bo_et bo; do
+#         for kern in dkm52 m52; do
+#             for acq in ucb; do
+#                 python run.py ${bovar}-${kern}_${acq} $seed
+#             done
+#         done
+#     done
+
+# done
